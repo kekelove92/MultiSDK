@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.verificationFragment.StepMainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_steps"
+                android:textColor="@color/color_3"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_margin="10dp"
+                android:minHeight="150dp">
+
+
+
+                <ImageView
+                    android:id="@+id/img_bank_verify"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bank_account"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_bank_verify"
+                    android:layout_toLeftOf="@id/img_bank"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_3"
+                    android:text="@string/bank_information"/>
+
+                <ImageView
+                    android:id="@+id/img_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_marginRight="20dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_bank"
+                android:layout_margin="10dp"
+                android:minHeight="150dp">
+
+
+                <ImageView
+                    android:id="@+id/img_id_card"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/id_card"/>
+
+                <TextView
+                    android:id="@+id/tv_id_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_id_card"
+                    android:layout_toLeftOf="@id/img_information"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_3"
+                    android:text="@string/verify_id_card"/>
+
+                <ImageView
+                    android:id="@+id/img_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_id_card"
+                android:layout_margin="10dp"
+                android:minHeight="150dp">
+
+                <ImageView
+                    android:id="@+id/img_person"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_refer"/>
+
+                <TextView
+                    android:id="@+id/tv_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_person"
+                    android:layout_toLeftOf="@id/img_reference"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_3"
+                    android:text="@string/verify_person"/>
+
+                <ImageView
+                    android:id="@+id/img_reference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_arrow"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

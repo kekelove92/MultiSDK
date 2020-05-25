@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "791181522461",
+    "firebase_url": "https://plutus-002-edong.firebaseio.com",
+    "project_id": "plutus-002-edong",
+    "storage_bucket": "plutus-002-edong.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791181522461:android:1e562cad9b5ba42c2338f4",
+        "android_client_info": {
+          "package_name": "com.appfree.newedong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791181522461-985ps6272lmnddpfusjep1v7kh1bmftt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnd5ROadkVV09m17uejGEL-WNtoh5qOs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791181522461-985ps6272lmnddpfusjep1v7kh1bmftt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

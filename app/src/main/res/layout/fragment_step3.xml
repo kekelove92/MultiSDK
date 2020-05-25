@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_3"
+    tools:context=".fragment.verificationFragment.Step3Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_done"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/img_verify_person"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_refer"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_step_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/img_verify_person">
+                <RelativeLayout
+                    android:id="@+id/layout_img_contact_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_contact_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/contact_list"/>
+
+                    <TextView
+                        android:id="@+id/tv_name_person_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step4_name_person1"
+                        android:layout_toRightOf="@+id/img_contact_1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_contact_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_img_contact_1">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_number_account_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/step4_number_contact_person1">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_number__1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dp"
+                            android:layout_marginTop="10dp"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:textSize="18dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/border_textview"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:gravity="center_vertical"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_name_account_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:layout_below="@id/layout_number_account_1"
+                        android:hint="@string/step4_name_contact_person1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_name_contact_1"
+                            android:minHeight="60dp"
+                            android:layout_marginTop="10dp"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:textSize="18dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/border_textview"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:gravity="center_vertical"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_relationship_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_below="@id/layout_name_account_1"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/step4_relationship">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_relationship_contact_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <!-- layout 2 -->
+
+
+</RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_step_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/layout_step_1">
+                <RelativeLayout
+                    android:id="@+id/layout_img_contact_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_contact_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/contact_list"/>
+
+                    <TextView
+                        android:id="@+id/tv_name_person_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step4_name_person1"
+                        android:layout_toRightOf="@+id/img_contact_2"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_contact_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_img_contact_2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_number_account_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/step4_number_contact_person1">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_number__2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dp"
+                            android:layout_marginTop="10dp"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:textSize="18dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/border_textview"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:gravity="center_vertical"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_name_account_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:layout_below="@id/layout_number_account_2"
+                        android:hint="@string/step4_name_contact_person1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_name_contact_2"
+                            android:minHeight="60dp"
+                            android:layout_marginTop="10dp"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:textSize="18dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/border_textview"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:gravity="center_vertical"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layout_relationship_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_below="@id/layout_name_account_2"
+                        android:paddingTop="0dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/step4_relationship">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_relationship_contact_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <!-- layout 2 -->
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/color_4"
+        android:visibility="visible"
+        android:text="@string/accept" />
+
+</RelativeLayout>

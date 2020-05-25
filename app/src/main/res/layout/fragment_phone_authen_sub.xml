@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_splash"
+    tools:context=".fragment.phoneAuthen.PhoneAuthenSubFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:text="@string/enter_otp"/>
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/title"
+        android:layout_marginTop="100dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/white"
+        app:lineColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center"
+        app:lineWidth="2dp"
+        app:viewType="rectangle"
+        app:itemHeight="48dp"
+        app:itemWidth="48dp"
+        android:visibility="visible"
+        android:inputType="number">
+
+        <requestFocus/>
+
+    </com.chaos.view.PinView>
+
+
+
+
+</RelativeLayout>

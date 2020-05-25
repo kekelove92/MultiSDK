@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_splash"
+    tools:context=".activity.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/img_splash"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+    
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/img_splash"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_below="@id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    </TextView>
+</RelativeLayout>
